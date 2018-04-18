@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v2.0.0-beta.0
+* @version v2.0.0-beta.4
 * @link https://coreui.io
 * Copyright (c) 2018 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
 -->
-<!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -14,12 +15,14 @@
     <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>CoreUI Free Bootstrap Admin Template</title>
     <!-- Icons-->
     <link href="node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
     <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
+    <link href="vendors/css/pace.min.css" rel="stylesheet">
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
     <header class="app-header navbar">
@@ -539,10 +542,9 @@
                 <small>
                   <b>Option 1</b>
                 </small>
-                <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+                <label class="switch switch-label switch-pill switch-success switch-sm float-right">
                   <input class="switch-input" type="checkbox" checked="">
-                  <span class="switch-label" data-on="On" data-off="Off"></span>
-                  <span class="switch-handle"></span>
+                  <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
                 </label>
               </div>
               <div>
@@ -554,10 +556,9 @@
                 <small>
                   <b>Option 2</b>
                 </small>
-                <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+                <label class="switch switch-label switch-pill switch-success switch-sm float-right">
                   <input class="switch-input" type="checkbox">
-                  <span class="switch-label" data-on="On" data-off="Off"></span>
-                  <span class="switch-handle"></span>
+                  <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
                 </label>
               </div>
               <div>
@@ -569,10 +570,9 @@
                 <small>
                   <b>Option 3</b>
                 </small>
-                <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+                <label class="switch switch-label switch-pill switch-success switch-sm float-right">
                   <input class="switch-input" type="checkbox">
-                  <span class="switch-label" data-on="On" data-off="Off"></span>
-                  <span class="switch-handle"></span>
+                  <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
                 </label>
               </div>
             </div>
@@ -581,10 +581,9 @@
                 <small>
                   <b>Option 4</b>
                 </small>
-                <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+                <label class="switch switch-label switch-pill switch-success switch-sm float-right">
                   <input class="switch-input" type="checkbox" checked="">
-                  <span class="switch-label" data-on="On" data-off="Off"></span>
-                  <span class="switch-handle"></span>
+                  <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
                 </label>
               </div>
             </div>
@@ -649,6 +648,9 @@
     <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
     <script>
       $('#ui-view').ajaxLoad();
+      $(document).ajaxSuccess(function() {
+        Pace.restart()
+      });
     </script>
   </body>
 </html>

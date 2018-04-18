@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
 * @version v2.0.0-beta.0
@@ -5,7 +6,7 @@
 * Copyright (c) 2018 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
 -->
-<!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -14,12 +15,14 @@
     <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>CoreUI Free Bootstrap Admin Template</title>
     <!-- Icons-->
     <link href="node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
     <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
+    <link href="vendors/css/pace.min.css" rel="stylesheet">
   </head>
   <body class="app flex-row align-items-center">
     <div class="container">
@@ -54,6 +57,9 @@
     <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
     <script>
       $('#ui-view').ajaxLoad();
+      $(document).ajaxComplete(function() {
+        Pace.restart()
+      });
     </script>
   </body>
 </html>
