@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v2.0.0-beta.4
+* @version v2.0.0-rc.0
 * @link https://coreui.io
 * Copyright (c) 2018 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
@@ -648,7 +648,7 @@
     <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
     <script>
       $('#ui-view').ajaxLoad();
-      $(document).ajaxSuccess(function() {
+      $(document).ajaxComplete(function() {
         Pace.restart()
       });
     </script>
