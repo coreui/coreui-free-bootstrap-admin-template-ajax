@@ -1,0 +1,19 @@
+- var ajax = true
+doctype html
+include ../partials/banner.pug
+
+html(lang='en')
+  head
+    include ../partials/head.pug
+  body.app.header-fixed.sidebar-fixed.aside-menu-fixed.sidebar-lg-show
+    include ../partials/header.pug
+    .app-body
+      include ../partials/sidebar.pug
+      main(class='main')
+        include ../partials/breadcrumb.pug
+        .container-fluid
+          #ui-view
+
+      include ../partials/aside.pug
+    include ../partials/footer.pug
+    include ../partials/scripts.pug

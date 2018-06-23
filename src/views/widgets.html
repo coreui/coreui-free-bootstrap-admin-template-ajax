@@ -3,13 +3,14 @@
 <script src="node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
 <script src="js/widgets.js"></script>
 
+
 <div class="animated fadeIn">
   <div class="row">
     <div class="col-sm-6 col-lg-3">
       <div class="card text-white bg-primary">
         <div class="card-body pb-0">
           <div class="btn-group float-right">
-            <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="icon-settings"></i>
             </button>
             <div class="dropdown-menu dropdown-menu-right">
@@ -22,31 +23,31 @@
           <div>Members online</div>
         </div>
         <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
-          <canvas id="card-chart1" class="chart" height="70"></canvas>
+          <canvas class="chart" id="card-chart1" height="70"></canvas>
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-lg-3">
       <div class="card text-white bg-info">
         <div class="card-body pb-0">
-          <button type="button" class="btn btn-transparent p-0 float-right">
+          <button class="btn btn-transparent p-0 float-right" type="button">
             <i class="icon-location-pin"></i>
           </button>
           <div class="text-value">9.823</div>
           <div>Members online</div>
         </div>
         <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
-          <canvas id="card-chart2" class="chart" height="70"></canvas>
+          <canvas class="chart" id="card-chart2" height="70"></canvas>
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-lg-3">
       <div class="card text-white bg-warning">
         <div class="card-body pb-0">
           <div class="btn-group float-right">
-            <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="icon-settings"></i>
             </button>
             <div class="dropdown-menu dropdown-menu-right">
@@ -59,16 +60,16 @@
           <div>Members online</div>
         </div>
         <div class="chart-wrapper mt-3" style="height:70px;">
-          <canvas id="card-chart3" class="chart" height="70"></canvas>
+          <canvas class="chart" id="card-chart3" height="70"></canvas>
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-lg-3">
       <div class="card text-white bg-danger">
         <div class="card-body pb-0">
           <div class="btn-group float-right">
-            <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="icon-settings"></i>
             </button>
             <div class="dropdown-menu dropdown-menu-right">
@@ -81,14 +82,13 @@
           <div>Members online</div>
         </div>
         <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
-          <canvas id="card-chart4" class="chart" height="70"></canvas>
+          <canvas class="chart" id="card-chart4" height="70"></canvas>
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
   </div>
-  <!--/.row-->
-
+  <!-- /.row-->
   <div class="row">
     <div class="col-sm-6 col-lg-3">
       <div class="card">
@@ -102,7 +102,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-lg-3">
       <div class="card">
         <div class="card-body">
@@ -115,7 +115,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-lg-3">
       <div class="card">
         <div class="card-body">
@@ -128,7 +128,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-lg-3">
       <div class="card">
         <div class="card-body">
@@ -141,10 +141,9 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
   </div>
-  <!--/.row-->
-
+  <!-- /.row-->
   <div class="row">
     <div class="col-sm-6 col-lg-3">
       <div class="card text-white bg-primary">
@@ -158,7 +157,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-lg-3">
       <div class="card text-white bg-warning">
         <div class="card-body">
@@ -171,7 +170,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-lg-3">
       <div class="card text-white bg-danger">
         <div class="card-body">
@@ -184,7 +183,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-lg-3">
       <div class="card text-white bg-info">
         <div class="card-body">
@@ -197,10 +196,9 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
   </div>
-  <!--/.row-->
-
+  <!-- /.row-->
   <div class="row">
     <div class="col-md-2 col-sm-4">
       <div class="card">
@@ -208,75 +206,74 @@
           <div class="text-muted small text-uppercase font-weight-bold">Title</div>
           <div class="text-value-lg py-3">1,123</div>
           <div class="chart-wrapper mx-auto" style="height:40px;width:80px">
-            <canvas id="sparkline-chart-1" class="chart chart-bar" height="40" width="80"></canvas>
+            <canvas class="chart chart-bar" id="sparkline-chart-1" height="40" width="80"></canvas>
           </div>
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-md-2 col-sm-4">
       <div class="card">
         <div class="card-body text-center">
           <div class="text-muted small text-uppercase font-weight-bold">Title</div>
           <div class="text-value-lg py-3">1,123</div>
           <div class="chart-wrapper mx-auto" style="height:40px;width:80px">
-            <canvas id="sparkline-chart-2" class="chart chart-bar" height="40" width="80"></canvas>
+            <canvas class="chart chart-bar" id="sparkline-chart-2" height="40" width="80"></canvas>
           </div>
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-md-2 col-sm-4">
       <div class="card">
         <div class="card-body text-center">
           <div class="text-muted small text-uppercase font-weight-bold">Title</div>
           <div class="text-value-lg py-3">1,123</div>
           <div class="chart-wrapper mx-auto" style="height:40px;width:80px">
-            <canvas id="sparkline-chart-3" class="chart chart-bar" height="40" width="80"></canvas>
+            <canvas class="chart chart-bar" id="sparkline-chart-3" height="40" width="80"></canvas>
           </div>
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-md-2 col-sm-4">
       <div class="card">
         <div class="card-body text-center">
           <div class="text-muted small text-uppercase font-weight-bold">Title</div>
           <div class="text-value-lg py-3">1,123</div>
           <div class="chart-wrapper mx-auto" style="height:40px;width:80px">
-            <canvas id="sparkline-chart-4" class="chart chart-line" height="40" width="100"></canvas>
+            <canvas class="chart chart-line" id="sparkline-chart-4" height="40" width="100"></canvas>
           </div>
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-md-2 col-sm-4">
       <div class="card">
         <div class="card-body text-center">
           <div class="text-muted small text-uppercase font-weight-bold">Title</div>
           <div class="text-value-lg py-3">1,123</div>
           <div class="chart-wrapper mx-auto" style="height:40px;width:80px">
-            <canvas id="sparkline-chart-5" class="chart chart-line" height="40" width="100"></canvas>
+            <canvas class="chart chart-line" id="sparkline-chart-5" height="40" width="100"></canvas>
           </div>
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-md-2 col-sm-4">
       <div class="card">
         <div class="card-body text-center">
           <div class="text-muted small text-uppercase font-weight-bold">Title</div>
           <div class="text-value-lg py-3">1,123</div>
           <div class="chart-wrapper mx-auto" style="height:40px;width:80px">
-            <canvas id="sparkline-chart-6" class="chart chart-line" height="40" width="100"></canvas>
+            <canvas class="chart chart-line" id="sparkline-chart-6" height="40" width="100"></canvas>
           </div>
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
   </div>
-  <!--/.row-->
-
+  <!-- /.row-->
   <div class="row">
     <div class="col-6 col-lg-3">
       <div class="card">
@@ -289,7 +286,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-6 col-lg-3">
       <div class="card">
         <div class="card-body p-3 d-flex align-items-center">
@@ -301,7 +298,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-6 col-lg-3">
       <div class="card">
         <div class="card-body p-3 d-flex align-items-center">
@@ -313,7 +310,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-6 col-lg-3">
       <div class="card">
         <div class="card-body p-3 d-flex align-items-center">
@@ -325,7 +322,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-6 col-lg-3">
       <div class="card">
         <div class="card-body p-3 d-flex align-items-center">
@@ -343,7 +340,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-6 col-lg-3">
       <div class="card">
         <div class="card-body p-3 d-flex align-items-center">
@@ -361,7 +358,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-6 col-lg-3">
       <div class="card">
         <div class="card-body p-3 d-flex align-items-center">
@@ -379,7 +376,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-6 col-lg-3">
       <div class="card">
         <div class="card-body p-3 d-flex align-items-center">
@@ -397,10 +394,9 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
   </div>
-  <!--/.row-->
-
+  <!-- /.row-->
   <div class="row">
     <div class="col-6 col-lg-3">
       <div class="card">
@@ -413,7 +409,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-6 col-lg-3">
       <div class="card">
         <div class="card-body p-0 d-flex align-items-center">
@@ -425,7 +421,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-6 col-lg-3">
       <div class="card">
         <div class="card-body p-0 d-flex align-items-center">
@@ -437,7 +433,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-6 col-lg-3">
       <div class="card">
         <div class="card-body p-0 d-flex align-items-center">
@@ -449,7 +445,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-6 col-lg-3">
       <div class="card">
         <div class="card-body p-0 d-flex align-items-center">
@@ -461,7 +457,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-6 col-lg-3">
       <div class="card">
         <div class="card-body p-0 d-flex align-items-center">
@@ -473,7 +469,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-6 col-lg-3">
       <div class="card">
         <div class="card-body p-0 d-flex align-items-center">
@@ -485,7 +481,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-6 col-lg-3">
       <div class="card">
         <div class="card-body p-0 d-flex align-items-center">
@@ -497,10 +493,9 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
   </div>
-  <!--/.row-->
-
+  <!-- /.row-->
   <div class="row">
     <div class="col-sm-6 col-lg-3">
       <div class="brand-card">
@@ -522,7 +517,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-lg-3">
       <div class="brand-card">
         <div class="brand-card-header bg-twitter">
@@ -543,7 +538,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-lg-3">
       <div class="brand-card">
         <div class="brand-card-header bg-linkedin">
@@ -564,7 +559,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-lg-3">
       <div class="brand-card">
         <div class="brand-card-header bg-google-plus">
@@ -585,10 +580,9 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
   </div>
-  <!--/.row-->
-
+  <!-- /.row-->
   <div class="card-group mb-4">
     <div class="card">
       <div class="card-body">
@@ -651,7 +645,6 @@
       </div>
     </div>
   </div>
-
   <div class="row">
     <div class="col-sm-6 col-md-2">
       <div class="card">
@@ -667,7 +660,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-md-2">
       <div class="card">
         <div class="card-body">
@@ -682,7 +675,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-md-2">
       <div class="card">
         <div class="card-body">
@@ -697,7 +690,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-md-2">
       <div class="card">
         <div class="card-body">
@@ -712,7 +705,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-md-2">
       <div class="card">
         <div class="card-body">
@@ -727,7 +720,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-md-2">
       <div class="card">
         <div class="card-body">
@@ -742,10 +735,9 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
   </div>
-  <!--/.row-->
-
+  <!-- /.row-->
   <div class="row">
     <div class="col-sm-6 col-md-2">
       <div class="card text-white bg-info">
@@ -761,7 +753,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-md-2">
       <div class="card text-white bg-success">
         <div class="card-body">
@@ -776,7 +768,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-md-2">
       <div class="card text-white bg-warning">
         <div class="card-body">
@@ -791,7 +783,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-md-2">
       <div class="card text-white bg-primary">
         <div class="card-body">
@@ -806,7 +798,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-md-2">
       <div class="card text-white bg-danger">
         <div class="card-body">
@@ -821,7 +813,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
     <div class="col-sm-6 col-md-2">
       <div class="card text-white bg-info">
         <div class="card-body">
@@ -836,7 +828,7 @@
         </div>
       </div>
     </div>
-    <!--/.col-->
+    <!-- /.col-->
   </div>
-  <!--/.row-->
+  <!-- /.row-->
 </div>

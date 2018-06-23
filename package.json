@@ -1,6 +1,6 @@
 {
   "name": "@coreui/coreui-free-bootstrap-admin-template-ajax",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Free Bootstrap Admin Template Ajax",
   "keywords": [
     "admin",
@@ -55,15 +55,17 @@
     "js-lint": "eslint src/js/src",
     "localhost": "browser-sync start --server \"./src\" --serveStatic \"./\" --files \"!./src/js/src/**/*, ./src/**/*, !./src/scss/**/*\"",
     "localhost-dist": "browser-sync start --server \"./dist\"",
+    "pug": "node build/pug.js ajax",
     "release-version": "node build/change-version.js",
     "serve": "npm-run-all --parallel localhost watch-css watch-js",
     "watch-css": "nodemon --ignore dist/ -e scss -x \"npm run css\"",
-    "watch-js": "nodemon --watch src/js/src/ -x \"npm run js\""
+    "watch-js": "nodemon --watch src/js/src/ -x \"npm run js\"",
+    "watch-pug": "nodemon -e pug -x \"npm run pug\""
   },
   "dependencies": {
-    "@coreui/coreui": "2.0.0",
+    "@coreui/coreui": "2.0.3",
     "@coreui/coreui-plugin-chartjs-custom-tooltips": "1.2.0",
-    "@coreui/icons": "^0.1.1",
+    "@coreui/icons": "^0.3.0",
     "bootstrap": "4.1.1",
     "chart.js": "^2.7.2",
     "flag-icon-css": "3.0.0",
