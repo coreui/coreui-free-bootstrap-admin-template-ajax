@@ -1,3 +1,14 @@
+## v2.1.8
+- feat(switches): add disabled switch example
+- fix(switches): missing ending semicolons
+- fix(switches): add missing `<tr>`
+- update: `@coreui/coreui` to `2.0.26`
+- update: `eslint` to `5.8.0`
+- update: `eslint-plugin-compat` to `2.6.3`
+- update: `node-sass` to `4.10.0`
+- update: `nodemon` to `1.18.6`
+- update: `stylelint` to `9.7.1` 
+
 ## v2.1.7
 - fix(pug): crossplatform use `path.sep` instead of `/` - thanks @vasilevich
 - fix(cards): smooth collapse card - thanks @MartijnBastiaansen #378

@@ -26,7 +26,13 @@ block view
             label.switch.switch-3d.switch-danger
               input.switch-input(type='checkbox', checked='')
               span.switch-slider
-      // /.col
+            label.switch.switch-3d.switch-primary
+              input.switch-input(type='checkbox', checked='', disabled)
+              span.switch-slider
+            label.switch.switch-3d.switch-primary
+              input.switch-input(type='checkbox', disabled)
+              span.switch-slider
+    // /.col
       .col-md-6
         .card
           .card-header
@@ -466,9 +472,10 @@ block view
           .card-body.p-0
             table.table.table-hover.table-striped.table-align-middle.mb-0
               thead
-                th Size
-                th Example
-                th CSS Class
+                tr
+                  th Size
+                  th Example
+                  th CSS Class
               tbody
                 tr
                   td
@@ -478,7 +485,7 @@ block view
                       input.switch-input(type='checkbox', checked='')
                       span.switch-slider
                   td
-                    | Add following class 
+                    | Add following class
                     code .switch-lg
                 tr
                   td
@@ -497,7 +504,7 @@ block view
                       input.switch-input(type='checkbox', checked='')
                       span.switch-slider
                   td
-                    | Add following class 
+                    | Add following class
                     code .switch-sm
       // /.col
     // /.row
