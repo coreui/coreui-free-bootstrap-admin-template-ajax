@@ -1,3 +1,16 @@
+## v2.1.9
+- update: `@coreui/coreui` to `2.1.3`
+- update: `popper.js` to `1.14.5`
+- update: `nodemon` to `1.18.7` (vulnerability removed)
+- update: `npm-run-all` to `4.1.5` (vulnerability removed)
+- update: `@babel/cli` to `7.1.5`
+- update: `@babel/core` to `7.1.6`
+- update: `@babel/preset-env` to `7.1.6`
+- update: `eslint` to `5.9.0`
+- update: `shelljs` to `0.8.3`
+- update: `stylelint` to `9.8.0`
+- update: `stylelint-scss` to `3.4.0`
+
 ## v2.1.8
 - feat(switches): add disabled switch example
 - fix(switches): missing ending semicolons
