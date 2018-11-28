@@ -1,3 +1,9 @@
+## v2.1.next
+- fix(collapse): add `mb-0` to accordion cards
+- refactor(forms): add `autocomplete`
+- refactor(modals): add `mb-1` to buttons
+- update: `stylelint` to `9.9.0`
+
 ## v2.1.9
 - update: `@coreui/coreui` to `2.1.3`
 - update: `popper.js` to `1.14.5`
