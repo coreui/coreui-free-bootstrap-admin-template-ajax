@@ -106,12 +106,12 @@ block view
               .form-group.row
                 label.col-md-3.col-form-label(for='email-input') Email Input
                 .col-md-9
-                  input#email-input.form-control(type='email', name='email-input', placeholder='Enter Email' autocomplete='email')
+                  input#email-input.form-control(type='email', name='email-input', placeholder='Enter Email', autocomplete='email')
                   span.help-block Please enter your email
               .form-group.row
                 label.col-md-3.col-form-label(for='password-input') Password
                 .col-md-9
-                  input#password-input.form-control(type='password', name='password-input', placeholder='Password' autocomplete='new-password')
+                  input#password-input.form-control(type='password', name='password-input', placeholder='Password', autocomplete='new-password')
                   span.help-block Please enter a complex password
               .form-group.row
                 label.col-md-3.col-form-label(for='date-input') Date Input
@@ -249,10 +249,10 @@ block view
             form.form-inline(action='', method='post')
               .form-group
                 label.mr-1(for='exampleInputName2') Name
-                input#exampleInputName2.form-control(type='text', placeholder='Jane Doe' autocomplete='name')
+                input#exampleInputName2.form-control(type='text', placeholder='Jane Doe', autocomplete='name')
               .form-group
                 label.mx-1(for='exampleInputEmail2') Email
-                input#exampleInputEmail2.form-control(type='email', placeholder='jane.doe@example.com' autocomplete='email')
+                input#exampleInputEmail2.form-control(type='email', placeholder='jane.doe@example.com', autocomplete='email')
           .card-footer
             button.btn.btn-sm.btn-primary(type='submit')
               i.fa.fa-dot-circle-o
@@ -270,12 +270,12 @@ block view
               .form-group.row
                 label.col-md-3.col-form-label(for='hf-email') Email
                 .col-md-9
-                  input#hf-email.form-control(type='email', name='hf-email', placeholder='Enter Email..' autocomplete='email')
+                  input#hf-email.form-control(type='email', name='hf-email', placeholder='Enter Email..', autocomplete='email')
                   span.help-block Please enter your email
               .form-group.row
                 label.col-md-3.col-form-label(for='hf-password') Password
                 .col-md-9
-                  input#hf-password.form-control(type='password', name='hf-password', placeholder='Enter Password..' autocomplete='current-password')
+                  input#hf-password.form-control(type='password', name='hf-password', placeholder='Enter Password..', autocomplete='current-password')
                   span.help-block Please enter your password
           .card-footer
             button.btn.btn-sm.btn-primary(type='submit')
@@ -292,11 +292,11 @@ block view
             form(action='', method='post')
               .form-group
                 label(for='nf-email') Email
-                input#nf-email.form-control(type='email', name='nf-email', placeholder='Enter Email..' autocomplete='email')
+                input#nf-email.form-control(type='email', name='nf-email', placeholder='Enter Email..', autocomplete='email')
                 span.help-block Please enter your email
               .form-group
                 label(for='nf-password') Password
-                input#nf-password.form-control(type='password', name='nf-password', placeholder='Enter Password..' autocomplete='current-password')
+                input#nf-password.form-control(type='password', name='nf-password', placeholder='Enter Password..', autocomplete='current-password')
                 span.help-block Please enter your password
           .card-footer
             button.btn.btn-sm.btn-primary(type='submit')
@@ -421,11 +421,11 @@ block view
                     .input-group-prepend
                       span.input-group-text
                         i.fa.fa-user
-                    input#input1-group1.form-control(type='text', name='input1-group1', placeholder='Username' autocomplete='username')
+                    input#input1-group1.form-control(type='text', name='input1-group1', placeholder='Username', autocomplete='username')
               .form-group.row
                 .col-md-12
                   .input-group
-                    input#input2-group1.form-control(type='email', name='input2-group1', placeholder='Email' autocomplete='email')
+                    input#input2-group1.form-control(type='email', name='input2-group1', placeholder='Email', autocomplete='email')
                     .input-group-append
                       span.input-group-text
                         i.fa.fa-envelope-o
@@ -459,11 +459,11 @@ block view
                       button.btn.btn-primary(type='button')
                         i.fa.fa-search
                         |  Search
-                    input#input1-group2.form-control(type='text', name='input1-group2', placeholder='Username' autocomplete='username')
+                    input#input1-group2.form-control(type='text', name='input1-group2', placeholder='Username', autocomplete='username')
               .form-group.row
                 .col-md-12
                   .input-group
-                    input#input2-group2.form-control(type='email', name='input2-group2', placeholder='Email' autocomplete='email')
+                    input#input2-group2.form-control(type='email', name='input2-group2', placeholder='Email', autocomplete='email')
                     span.input-group-append
                       button.btn.btn-primary(type='button') Submit
               .form-group.row
@@ -503,11 +503,11 @@ block view
                         a.dropdown-item(href='#') Something else here
                         .dropdown-divider(role='separator')
                         a.dropdown-item(href='#') Separated link
-                    input#input1-group3.form-control(type='text', name='input1-group3', placeholder='Username' autocomplete='username')
+                    input#input1-group3.form-control(type='text', name='input1-group3', placeholder='Username', autocomplete='username')
               .form-group.row
                 .col-md-12
                   .input-group
-                    input#input2-group3.form-control(type='email', name='input2-group3', placeholder='Email' autocomplete='email')
+                    input#input2-group3.form-control(type='email', name='input2-group3', placeholder='Email', autocomplete='email')
                     .input-group-append
                       button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
                         | Action
@@ -640,7 +640,7 @@ block view
                 .input-group
                   .input-group-prepend
                     span.input-group-text Username
-                  input#username3.form-control(type='text', name='username3' autocomplete='username')
+                  input#username3.form-control(type='text', name='username3', autocomplete='username')
                   .input-group-append
                     span.input-group-text
                       i.fa.fa-user
@@ -648,7 +648,7 @@ block view
                 .input-group
                   .input-group-prepend
                     span.input-group-text Email
-                  input#email3.form-control(type='email', name='email3' autocomplete='email')
+                  input#email3.form-control(type='email', name='email3', autocomplete='email')
                   .input-group-append
                     span.input-group-text
                       i.fa.fa-envelope
@@ -656,7 +656,7 @@ block view
                 .input-group
                   .input-group-prepend
                     span.input-group-text Password
-                  input#password3.form-control(type='password', name='password3' autocomplete='new-password')
+                  input#password3.form-control(type='password', name='password3', autocomplete='new-password')
                   .input-group-append
                     span.input-group-text
                       i.fa.fa-asterisk
@@ -670,19 +670,19 @@ block view
             form(action='', method='post')
               .form-group
                 .input-group
-                  input#username2.form-control(type='text', name='username2', placeholder='Username' autocomplete='username')
+                  input#username2.form-control(type='text', name='username2', placeholder='Username', autocomplete='username')
                   .input-group-append
                     span.input-group-text
                       i.fa.fa-user
               .form-group
                 .input-group
-                  input#email2.form-control(type='email', name='email2', placeholder='Email' autocomplete='email')
+                  input#email2.form-control(type='email', name='email2', placeholder='Email', autocomplete='email')
                   .input-group-append
                     span.input-group-text
                       i.fa.fa-envelope
               .form-group
                 .input-group
-                  input#password2.form-control(type='password', name='password2', placeholder='Password' autocomplete='new-password')
+                  input#password2.form-control(type='password', name='password2', placeholder='Password', autocomplete='new-password')
                   .input-group-append
                     span.input-group-text
                       i.fa.fa-asterisk
@@ -699,19 +699,19 @@ block view
                   .input-group-prepend
                     span.input-group-text
                       i.fa.fa-user
-                  input#username.form-control(type='text', name='username', placeholder='Username' autocomplete='username')
+                  input#username.form-control(type='text', name='username', placeholder='Username', autocomplete='username')
               .form-group
                 .input-group
                   .input-group-prepend
                     span.input-group-text
                       i.fa.fa-envelope
-                  input#email.form-control(type='email', name='email', placeholder='Email' autocomplete='email')
+                  input#email.form-control(type='email', name='email', placeholder='Email', autocomplete='email')
               .form-group
                 .input-group
                   .input-group-prepend
                     span.input-group-text
                       i.fa.fa-asterisk
-                  input#password.form-control(type='password', name='password', placeholder='Password' autocomplete='new-password')
+                  input#password.form-control(type='password', name='password', placeholder='Password', autocomplete='new-password')
               .form-group.form-actions
                 button.btn.btn-sm.btn-success(type='submit') Submit
     // /.row
