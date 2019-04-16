@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @version v2.0.0
+* @version v3.0.0-alpha.0
 * @link https://coreui.io
 * Copyright (c) 2018 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
@@ -29,10 +29,7 @@
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+      function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       // Shared ID
       gtag('config', 'UA-118965717-3');
@@ -50,19 +47,11 @@
                 <h1>Login</h1>
                 <p class="text-muted">Sign In to your account</p>
                 <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="icon-user"></i>
-                    </span>
-                  </div>
+                  <div class="input-group-prepend"><span class="input-group-text"><i class="icon-user"></i></span></div>
                   <input class="form-control" type="text" placeholder="Username">
                 </div>
                 <div class="input-group mb-4">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="icon-lock"></i>
-                    </span>
-                  </div>
+                  <div class="input-group-prepend"><span class="input-group-text"><i class="icon-lock"></i></span></div>
                   <input class="form-control" type="password" placeholder="Password">
                 </div>
                 <div class="row">
@@ -89,17 +78,16 @@
       </div>
     </div>
     <!-- CoreUI and necessary plugins-->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/pace-progress/pace.min.js"></script>
-    <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
-    <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+    <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
     <script>
-      $('#ui-view').ajaxLoad();
-      $(document).ajaxComplete(function() {
-        Pace.restart()
-      });
+      //- const async = document.getElementById('ui-view');
+      new coreui.AsyncLoad(document.getElementById('ui-view'));
+
+      //- $('#ui-view').asyncLoad();
+      //- $(document).ajaxComplete(function() {
+      //-   Pace.restart()
+      //- });
     </script>
   </body>
 </html>

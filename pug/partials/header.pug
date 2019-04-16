@@ -1,20 +1,22 @@
-header.app-header.navbar
-  button.navbar-toggler.sidebar-toggler.d-lg-none.mr-auto(type="button" data-toggle="sidebar-show")
-    span.navbar-toggler-icon
-  a.navbar-brand(href="#")
-    img.navbar-brand-full(src="img/brand/logo.svg" width="89" height="25" alt="CoreUI Logo")
-    img.navbar-brand-minimized(src="img/brand/sygnet.svg" width="30" height="30" alt="CoreUI Logo")
-  button.navbar-toggler.sidebar-toggler.d-md-down-none(type="button" data-toggle="sidebar-lg-show")
-    span.navbar-toggler-icon
+header.c-header.c-header-light.c-header-fixed
+  button.c-header-toggler.c-class-toggler.d-lg-none.mr-auto(type="button" data-target="#sidebar" data-class="c-sidebar-show")
+    span.c-header-toggler-icon
+  a.c-header-brand(href="#")
+    img.c-header-brand-full(src="img/brand/logo.svg" width="89" height="25" alt="CoreUI Logo")
+    img.c-header-brand-minimized(src="img/brand/sygnet.svg" width="30" height="30" alt="CoreUI Logo")
+  button.c-header-toggler.c-class-toggler.d-md-down-none(type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true")
+    span.c-header-toggler-icon
+  button.c-header-toggler.c-class-toggler.d-lg-none(type="button" data-target="#sidebar" data-class="c-sidebar-show")
+    span.c-header-toggler-icon
   if !starter
-    ul.nav.navbar-nav.d-md-down-none
+    ul.nav.c-header-nav.d-md-down-none
       li.nav-item.px-3
         a.nav-link(href="#") Dashboard
       li.nav-item.px-3
         a.nav-link(href="#") Users
       li.nav-item.px-3
         a.nav-link(href="#") Settings
-    ul.nav.navbar-nav.ml-auto
+    ul.nav.c-header-nav.ml-auto
       li.nav-item.d-md-down-none
         a.nav-link(href="#")
           i.icon-bell
@@ -70,7 +72,7 @@ header.app-header.navbar
           a.dropdown-item(href="#")
             i.fa.fa-lock
             |  Logout
-  button.navbar-toggler.aside-menu-toggler.d-md-down-none(type="button" data-toggle="aside-menu-lg-show")
-    span.navbar-toggler-icon
-  button.navbar-toggler.aside-menu-toggler.d-lg-none(type="button" data-toggle="aside-menu-show")
-    span.navbar-toggler-icon
+  button.c-header-toggler.c-class-toggler.d-md-down-none(type="button" data-target="#aside" data-class="c-sidebar-lg-show" responsive="true")
+    span.c-header-toggler-icon
+  button.c-header-toggler.c-class-toggler.d-lg-none(type="button" data-target="#aside" data-class="c-sidebar-show")
+    span.c-header-toggler-icon

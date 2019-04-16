@@ -5,15 +5,14 @@ include ../partials/banner.pug
 html(lang='en')
   head
     include ../partials/head.pug
-  body.app.header-fixed.sidebar-fixed.aside-menu-fixed.sidebar-lg-show
+  body.c-app.c-default-layout
     include ../partials/header.pug
-    .app-body
+    .c-body
       include ../partials/sidebar.pug
-      main(class='main')
+      include ../partials/aside.pug
+      main(class='c-main')
         include ../partials/breadcrumb.pug
         .container-fluid
           #ui-view
-
-      include ../partials/aside.pug
     include ../partials/footer.pug
     include ../partials/scripts.pug
