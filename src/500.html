@@ -29,7 +29,10 @@
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
       // Shared ID
       gtag('config', 'UA-118965717-3');
@@ -37,19 +40,19 @@
       gtag('config', 'UA-118965717-5');
     </script>
   </head>
-  <body class="app flex-row align-items-center">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-6">
+  <body class="c-app c-default-layout c-flex-row c-align-items-center">
+    <div class="c-container">
+      <div class="c-row c-justify-content-center">
+        <div class="c-col-md-6">
           <div class="clearfix">
-            <h1 class="float-left display-3 mr-4">500</h1>
-            <h4 class="pt-3">Houston, we have a problem!</h4>
-            <p class="text-muted">The page you are looking for is temporarily unavailable.</p>
+            <h1 class="c-float-left c-display-3 c-mr-4">500</h1>
+            <h4 class="c-pt-3">Houston, we have a problem!</h4>
+            <p class="c-text-muted">The page you are looking for is temporarily unavailable.</p>
           </div>
-          <div class="input-prepend input-group">
-            <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div>
-            <input class="form-control" id="prependedInput" size="16" type="text" placeholder="What are you looking for?"><span class="input-group-append">
-              <button class="btn btn-info" type="button">Search</button></span>
+          <div class="input-prepend c-input-group">
+            <div class="c-input-group-prepend"><span class="c-input-group-text"><i class="fa fa-search"></i></span></div>
+            <input class="c-form-control" id="prependedInput" size="16" type="text" placeholder="What are you looking for?"><span class="c-input-group-append">
+              <button class="c-btn c-btn-info" type="button">Search</button></span>
           </div>
         </div>
       </div>
@@ -57,14 +60,5 @@
     <!-- CoreUI and necessary plugins-->
     <script src="node_modules/pace-progress/pace.min.js"></script>
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
-    <script>
-      //- const async = document.getElementById('ui-view');
-      new coreui.AsyncLoad(document.getElementById('ui-view'));
-
-      //- $('#ui-view').asyncLoad();
-      //- $(document).ajaxComplete(function() {
-      //-   Pace.restart()
-      //- });
-    </script>
   </body>
 </html>

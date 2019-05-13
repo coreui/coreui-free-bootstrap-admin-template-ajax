@@ -4,9 +4,9 @@
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
-document.querySelectorAll('[data-toggle="popover"]').forEach(function (element) {
+document.querySelectorAll('[data-toggle="c-popover"]').forEach(function (element) {
   new coreui.Popover(element);
-}); // $('[data-toggle="popover"]').popover()
+}); // $('[data-toggle="c-popover"]').popover()
 // $('.popover-dismiss').popover({
 //   trigger: 'focus'
 // })

@@ -5,11 +5,11 @@
  * --------------------------------------------------------------------------
  */
 
-document.querySelectorAll('[data-toggle="popover"]').forEach((element) => {
+document.querySelectorAll('[data-toggle="c-popover"]').forEach((element) => {
   new coreui.Popover(element)
 })
 
-// $('[data-toggle="popover"]').popover()
+// $('[data-toggle="c-popover"]').popover()
 // $('.popover-dismiss').popover({
 //   trigger: 'focus'
 // })

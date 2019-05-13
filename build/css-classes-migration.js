@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-/* eslint-disable arrow-parens */
 'use strict'
 
 /* global Set */
@@ -11,7 +10,8 @@ const { join }  = require('path')
 const sh        = require('shelljs')
 // sh.config.fatal = true
 const sed       = sh.sed
-const replace   = fs.readFileSync('css_prefix_migration.json')
+const classesWithPrefix = fs.readFileSync('node_modules/@coreui/coreui/migration/css_prefix_migration.json')
+const newCSSClasses = fs.readFileSync('node_modules/@coreui/coreui/migration/css_new_classes.json')
 
 // Blame TC39... https://github.com/benjamingr/RegExp.escape/issues/37
 RegExp.quote = (string) => string.replace(/[-\\^$*+?.()|[\]{}]/g, '\\$&')
@@ -116,7 +116,7 @@ function findDataAttributes(filepath, allowedDataAttributes, classes) {
 
 function main(args) {
   const directory = args[0]
-  const newClasses = JSON.parse(replace).replace
+  const newClasses = Object.assign(JSON.parse(classesWithPrefix).replace, JSON.parse(newCSSClasses).replace)
   // const EXCLUDED_DIRS = new Set([
   //   '.git',
   //   'node_modules',

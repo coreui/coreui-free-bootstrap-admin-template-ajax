@@ -7,12 +7,12 @@ html(lang='en')
     include ../partials/head.pug
   body.c-app.c-default-layout
     include ../partials/header.pug
+    include ../partials/sidebar.pug
+    include ../partials/aside.pug
     .c-body
-      include ../partials/sidebar.pug
-      include ../partials/aside.pug
       main(class='c-main')
         include ../partials/breadcrumb.pug
-        .container-fluid
+        .c-container-fluid
           #ui-view
     include ../partials/footer.pug
     include ../partials/scripts.pug

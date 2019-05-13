@@ -1,19 +1,13 @@
 // CoreUI and necessary plugins
-//- script(src='node_modules/jquery/dist/jquery.min.js')
-//- script(src='node_modules/popper.js/dist/umd/popper.min.js')
-//- script(src='node_modules/bootstrap/dist/js/bootstrap.min.js')
 script(src='node_modules/pace-progress/pace.min.js')
-//- script(src='node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js')
 script(src='node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js')
 
 block scripts
 
 if ajax
-  script.
-    //- const async = document.getElementById('ui-view');
-    new coreui.AsyncLoad(document.getElementById('ui-view'));
-
-    //- $('#ui-view').asyncLoad();
-    //- $(document).ajaxComplete(function() {
-    //-   Pace.restart()
-    //- });
+  unless page
+    script.
+      new coreui.AsyncLoad(document.getElementById('ui-view'));
+      document.addEventListener('xhr', function() {
+        Pace.restart()
+      }, true);
