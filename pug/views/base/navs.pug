@@ -1,4 +1,4 @@
-extends /default.pug
+extends /_layout/default.pug
 
 block view
   .c-fade-in
@@ -14,39 +14,39 @@ block view
           .c-card-body
             ul.c-nav
               li.c-nav-item
-                a.c-nav-link.active(href='#') Active
+                a.c-nav-link.c-active(href='#') Active
               li.c-nav-item
                 a.c-nav-link(href='#') Link
               li.c-nav-item
                 a.c-nav-link(href='#') Link
               li.c-nav-item
-                a.c-nav-link.disabled(href='#') Disabled
+                a.c-nav-link.c-disabled(href='#') Disabled
             hr
             nav.c-nav
-              a.c-nav-link.active(href='#') Active
+              a.c-nav-link.c-active(href='#') Active
               a.c-nav-link(href='#') Link
               a.c-nav-link(href='#') Link
-              a.c-nav-link.disabled(href='#') Disabled
+              a.c-nav-link.c-disabled(href='#') Disabled
             hr
             ul.c-nav.c-justify-content-center
               li.c-nav-item
-                a.c-nav-link.active(href='#') Active
+                a.c-nav-link.c-active(href='#') Active
               li.c-nav-item
                 a.c-nav-link(href='#') Link
               li.c-nav-item
                 a.c-nav-link(href='#') Link
               li.c-nav-item
-                a.c-nav-link.disabled(href='#') Disabled
+                a.c-nav-link.c-disabled(href='#') Disabled
             hr
             ul.c-nav.c-justify-content-end
               li.c-nav-item
-                a.c-nav-link.active(href='#') Active
+                a.c-nav-link.c-active(href='#') Active
               li.c-nav-item
                 a.c-nav-link(href='#') Link
               li.c-nav-item
                 a.c-nav-link(href='#') Link
               li.c-nav-item
-                a.c-nav-link.disabled(href='#') Disabled
+                a.c-nav-link.c-disabled(href='#') Disabled
       .c-col-sm-12.c-col-xl-3
         .c-card
           .c-card-header
@@ -55,10 +55,10 @@ block view
             small vertical
           .c-card-body
             nav.c-nav.c-flex-column
-              a.c-nav-link.active(href='#') Active
+              a.c-nav-link.c-active(href='#') Active
               a.c-nav-link(href='#') Link
               a.c-nav-link(href='#') Link
-              a.c-nav-link.disabled(href='#') Disabled
+              a.c-nav-link.c-disabled(href='#') Disabled
       .c-col-sm-12.c-col-xl-3
         .c-card
           .c-card-header
@@ -68,13 +68,13 @@ block view
           .c-card-body
             ul.c-nav.c-flex-column
               li.c-nav-item
-                a.c-nav-link.active(href='#') Active
+                a.c-nav-link.c-active(href='#') Active
               li.c-nav-item
                 a.c-nav-link(href='#') Link
               li.c-nav-item
                 a.c-nav-link(href='#') Link
               li.c-nav-item
-                a.c-nav-link.disabled(href='#') Disabled
+                a.c-nav-link.c-disabled(href='#') Disabled
     .c-row
       .c-col-sm-12.c-col-xl-6
         .c-card
@@ -85,13 +85,13 @@ block view
           .c-card-body
             ul.c-nav.c-nav-tabs
               li.c-nav-item
-                a.c-nav-link.active(href='#') Active
+                a.c-nav-link.c-active(href='#') Active
               li.c-nav-item
                 a.c-nav-link(href='#') Link
               li.c-nav-item
                 a.c-nav-link(href='#') Link
               li.c-nav-item
-                a.c-nav-link.disabled(href='#') Disabled
+                a.c-nav-link.c-disabled(href='#') Disabled
       .c-col-sm-12.c-col-xl-6
         .c-card
           .c-card-header
@@ -101,13 +101,13 @@ block view
           .c-card-body
             ul.c-nav.c-nav-pills
               li.c-nav-item
-                a.c-nav-link.active(href='#') Active
+                a.c-nav-link.c-active(href='#') Active
               li.c-nav-item
                 a.c-nav-link(href='#') Link
               li.c-nav-item
                 a.c-nav-link(href='#') Link
               li.c-nav-item
-                a.c-nav-link.disabled(href='#') Disabled
+                a.c-nav-link.c-disabled(href='#') Disabled
     .c-row
       .c-col
         .c-card
@@ -118,31 +118,31 @@ block view
           .c-card-body
             ul.c-nav.c-nav-pills.c-nav-fill
               li.c-nav-item
-                a.c-nav-link.active(href='#') Active
+                a.c-nav-link.c-active(href='#') Active
               li.c-nav-item
                 a.c-nav-link(href='#') Longer nav link
               li.c-nav-item
                 a.c-nav-link(href='#') Link
               li.c-nav-item
-                a.c-nav-link.disabled(href='#') Disabled
+                a.c-nav-link.c-disabled(href='#') Disabled
             hr
             nav.c-nav.c-nav-pills.c-nav-fill
-              a.c-nav-item.c-nav-link.active(href='#') Active
+              a.c-nav-item.c-nav-link.c-active(href='#') Active
               a.c-nav-item.c-nav-link(href='#') Link
               a.c-nav-item.c-nav-link(href='#') Link
-              a.c-nav-item.c-nav-link.disabled(href='#') Disabled
+              a.c-nav-item.c-nav-link.c-disabled(href='#') Disabled
             hr
             nav.c-nav.c-nav-pills.c-nav-justified
-              a.c-nav-link.active(href='#') Active
+              a.c-nav-link.c-active(href='#') Active
               a.c-nav-link(href='#') Longer nav link
               a.c-nav-link(href='#') Link
-              a.c-nav-link.disabled(href='#') Disabled
+              a.c-nav-link.c-disabled(href='#') Disabled
             hr
             nav.c-nav.c-nav-pills.c-nav-justified
-              a.c-nav-item.c-nav-link.active(href='#') Active
+              a.c-nav-item.c-nav-link.c-active(href='#') Active
               a.c-nav-item.c-nav-link(href='#') Link
               a.c-nav-item.c-nav-link(href='#') Link
-              a.c-nav-item.c-nav-link.disabled(href='#') Disabled
+              a.c-nav-item.c-nav-link.c-disabled(href='#') Disabled
     .c-row
       .c-col
         .c-card
@@ -152,10 +152,10 @@ block view
             small with flex
           .c-card-body
             nav.c-nav.c-nav-pills.c-flex-column.c-flex-sm-row
-              a.c-flex-sm-fill.c-text-sm-center.c-nav-link.active(href='#') Active
+              a.c-flex-sm-fill.c-text-sm-center.c-nav-link.c-active(href='#') Active
               a.c-flex-sm-fill.c-text-sm-center.c-nav-link(href='#') Link
               a.c-flex-sm-fill.c-text-sm-center.c-nav-link(href='#') Link
-              a.c-flex-sm-fill.c-text-sm-center.c-nav-link.disabled(href='#') Disabled
+              a.c-flex-sm-fill.c-text-sm-center.c-nav-link.c-disabled(href='#') Disabled
     .c-row
       .c-col
         .c-card
@@ -166,7 +166,7 @@ block view
           .c-card-body
             ul.c-nav.c-nav-tabs
               li.c-nav-item
-                a.c-nav-link.active(href='#') Active
+                a.c-nav-link.c-active(href='#') Active
               li.c-nav-item.c-dropdown
                 a.c-nav-link.c-dropdown-toggle(data-toggle='c-dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') Dropdown
                 .c-dropdown-menu
@@ -178,7 +178,7 @@ block view
               li.c-nav-item
                 a.c-nav-link(href='#') Link
               li.c-nav-item
-                a.c-nav-link.disabled(href='#') Disabled
+                a.c-nav-link.c-disabled(href='#') Disabled
       .c-col
         .c-card
           .c-card-header
@@ -188,7 +188,7 @@ block view
           .c-card-body
             ul.c-nav.c-nav-pills
               li.c-nav-item
-                a.c-nav-link.active(href='#') Active
+                a.c-nav-link.c-active(href='#') Active
               li.c-nav-item.c-dropdown
                 a.c-nav-link.c-dropdown-toggle(data-toggle='c-dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') Dropdown
                 .c-dropdown-menu
@@ -200,7 +200,7 @@ block view
               li.c-nav-item
                 a.c-nav-link(href='#') Link
               li.c-nav-item
-                a.c-nav-link.disabled(href='#') Disabled
+                a.c-nav-link.c-disabled(href='#') Disabled
     .c-row
       .c-col
         .c-card
@@ -211,13 +211,13 @@ block view
           .c-card-body
             ul#myTab1.c-nav.c-nav-tabs(role='tablist')
               li.c-nav-item
-                a#home-tab.c-nav-link.active(data-toggle='c-tab', href='#home', role='tab', aria-controls='home', aria-selected='true') Home
+                a#home-tab.c-nav-link.c-active(data-toggle='c-tab', href='#home', role='tab', aria-controls='home', aria-selected='true') Home
               li.c-nav-item
                 a#profile-tab.c-nav-link(data-toggle='c-tab', href='#profile', role='tab', aria-controls='profile', aria-selected='false') Profile
               li.c-nav-item
                 a#contact-tab.c-nav-link(data-toggle='c-tab', href='#contact', role='tab', aria-controls='contact', aria-selected='false') Contact
             #myTab1Content.c-tab-content
-              #home.c-tab-pane.c-fade.c-show.active(role='tabpanel', aria-labelledby='home-tab')
+              #home.c-tab-pane.c-fade.c-show.c-active(role='tabpanel', aria-labelledby='home-tab')
                 | Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro
                 | synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher
                 | retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip
@@ -242,13 +242,13 @@ block view
               .c-col
                 ul#pills-tab.c-nav.c-nav-pills.c-mb-1(role='tablist')
                   li.c-nav-item
-                    a#pills-home-tab.c-nav-link.active(data-toggle='pill', href='#pills-home', role='tab', aria-controls='pills-home', aria-selected='true') Home
+                    a#pills-home-tab.c-nav-link.c-active(data-toggle='pill', href='#pills-home', role='tab', aria-controls='pills-home', aria-selected='true') Home
                   li.c-nav-item
                     a#pills-profile-tab.c-nav-link(data-toggle='pill', href='#pills-profile', role='tab', aria-controls='pills-profile', aria-selected='false') Profile
                   li.c-nav-item
                     a#pills-contact-tab.c-nav-link(data-toggle='pill', href='#pills-contact', role='tab', aria-controls='pills-contact', aria-selected='false') Contact
                 #pills-tabContent.c-tab-content
-                  #pills-home.c-tab-pane.c-fade.c-show.active(role='tabpanel', aria-labelledby='pills-home-tab')
+                  #pills-home.c-tab-pane.c-fade.c-show.c-active(role='tabpanel', aria-labelledby='pills-home-tab')
                     | Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro
                     | synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher
                     | retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip

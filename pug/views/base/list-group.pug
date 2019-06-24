@@ -1,4 +1,4 @@
-extends /default.pug
+extends /_layout/default.pug
 
 block view
   .c-fade-in
@@ -26,7 +26,7 @@ block view
             small active items
           .c-card-body
             ul.c-list-group
-              li.c-list-group-item.active Cras justo odio
+              li.c-list-group-item.c-active Cras justo odio
               li.c-list-group-item Dapibus ac facilisis in
               li.c-list-group-item Morbi leo risus
               li.c-list-group-item Porta ac consectetur ac
@@ -40,12 +40,12 @@ block view
             small links with disabled items
           .c-card-body
             .c-list-group
-              a.c-list-group-item.active(href='#')
+              a.c-list-group-item.c-active(href='#')
                 | Cras justo odio
               a.c-list-group-item.c-list-group-item-action(href='#') Dapibus ac facilisis in
               a.c-list-group-item.c-list-group-item-action(href='#') Morbi leo risus
               a.c-list-group-item.c-list-group-item-action(href='#') Porta ac consectetur ac
-              a.c-list-group-item.c-list-group-item-action.disabled(href='#') Vestibulum at eros
+              a.c-list-group-item.c-list-group-item-action.c-disabled(href='#') Vestibulum at eros
       .c-col-sm-12.c-col-xl-6
         .c-card
           .c-card-header
@@ -54,7 +54,7 @@ block view
             small buttons with disabled items
           .c-card-body
             .c-list-group
-              button.c-list-group-item.c-list-group-item-action.active(type='button')
+              button.c-list-group-item.c-list-group-item-action.c-active(type='button')
                 | Cras justo odio
               button.c-list-group-item.c-list-group-item-action(type='button') Dapibus ac facilisis in
               button.c-list-group-item.c-list-group-item-action(type='button') Morbi leo risus
@@ -139,7 +139,7 @@ block view
             small custom content
           .c-card-body
             .c-list-group
-              a.c-list-group-item.c-list-group-item-action.c-flex-column.c-align-items-start.active(href='#')
+              a.c-list-group-item.c-list-group-item-action.c-flex-column.c-align-items-start.c-active(href='#')
                 .c-d-flex.c-w-100.c-justify-content-between
                   h5.c-mb-1 List group item heading
                   small 3 days ago
@@ -172,7 +172,7 @@ block view
               .c-col-4
                 #list-tab.c-list-group(role='tablist')
                   a#list-home-list.c-list-group-item.c-list-group-item-action(data-toggle='c-tab', href='#list-home', role='tab', aria-controls='list-home', aria-selected='false') Home
-                  a#list-profile-list.c-list-group-item.c-list-group-item-action.active(data-toggle='c-tab', href='#list-profile', role='tab', aria-controls='list-profile', aria-selected='true') Profile
+                  a#list-profile-list.c-list-group-item.c-list-group-item-action.c-active(data-toggle='c-tab', href='#list-profile', role='tab', aria-controls='list-profile', aria-selected='true') Profile
                   a#list-messages-list.c-list-group-item.c-list-group-item-action(data-toggle='c-tab', href='#list-messages', role='tab', aria-controls='list-messages') Messages
                   a#list-settings-list.c-list-group-item.c-list-group-item-action(data-toggle='c-tab', href='#list-settings', role='tab', aria-controls='list-settings') Settings
               .c-col-8
@@ -180,7 +180,7 @@ block view
                   #list-home.c-tab-pane.c-fade(role='tabpanel', aria-labelledby='list-home-list')
                     p
                       | Velit aute mollit ipsum ad dolor consectetur nulla officia culpa adipisicing exercitation fugiat tempor. Voluptate deserunt sit sunt nisi aliqua fugiat proident ea ut. Mollit voluptate reprehenderit occaecat nisi ad non minim tempor sunt voluptate consectetur exercitation id ut nulla. Ea et fugiat aliquip nostrud sunt incididunt consectetur culpa aliquip eiusmod dolor. Anim ad Lorem aliqua in cupidatat nisi enim eu nostrud do aliquip veniam minim.
-                  #list-profile.c-tab-pane.c-fade.active.c-show(role='tabpanel', aria-labelledby='list-profile-list')
+                  #list-profile.c-tab-pane.c-fade.c-active.c-show(role='tabpanel', aria-labelledby='list-profile-list')
                     p
                       | Cupidatat quis ad sint excepteur laborum in esse qui. Et excepteur consectetur ex nisi eu do cillum ad laborum. Mollit et eu officia dolore sunt Lorem culpa qui commodo velit ex amet id ex. Officia anim incididunt laboris deserunt anim aute dolor incididunt veniam aute dolore do exercitation. Dolor nisi culpa ex ad irure in elit eu dolore. Ad laboris ipsum reprehenderit irure non commodo enim culpa commodo veniam incididunt veniam ad.
                   #list-messages.c-tab-pane.c-fade(role='tabpanel', aria-labelledby='list-messages-list')

@@ -1,4 +1,4 @@
-extends /pages.pug
+extends /_layout/pages.pug
 
 block view
   .c-container
@@ -11,21 +11,22 @@ block view
             .c-input-group.c-mb-3
               .c-input-group-prepend
                 span.c-input-group-text
-                  i.icon-user
+                  img.c-icon(src="assets/icons/user.svg" width="16" height="16" alt="CoreUI Icons User")
               input.c-form-control(type='text', placeholder='Username')
             .c-input-group.c-mb-3
               .c-input-group-prepend
-                span.c-input-group-text @
+                span.c-input-group-text
+                  span.c-icon @
               input.c-form-control(type='text', placeholder='Email')
             .c-input-group.c-mb-3
               .c-input-group-prepend
                 span.c-input-group-text
-                  i.icon-lock
+                  img.c-icon(src="assets/icons/lock-locked.svg" width="16" height="16" alt="CoreUI Icons Lock Locked")
               input.c-form-control(type='password', placeholder='Password')
             .c-input-group.c-mb-4
               .c-input-group-prepend
                 span.c-input-group-text
-                  i.icon-lock
+                  img.c-icon(src="assets/icons/lock-locked.svg" width="16" height="16" alt="CoreUI Icons Lock Locked")
               input.c-form-control(type='password', placeholder='Repeat password')
             button.c-btn.c-btn-block.c-btn-success(type='button') Create Account
           .c-card-footer.c-p-4

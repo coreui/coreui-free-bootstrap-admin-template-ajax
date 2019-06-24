@@ -1,4 +1,4 @@
-extends /default.pug
+extends /_layout/default.pug
 
 block view
   .c-fade-in
@@ -294,5 +294,5 @@ block view
                 | Disabled item
               .c-dropdown-menu
                 a.c-dropdown-item(href='#') Regular link
-                a.c-dropdown-item.disabled(href='#') Disabled link
+                a.c-dropdown-item.c-disabled(href='#') Disabled link
                 a.c-dropdown-item(href='#') Another link

@@ -1,4 +1,4 @@
-extends /default.pug
+extends /_layout/default.pug
 
 block view
   .c-fade-in
@@ -14,7 +14,7 @@ block view
             a.c-navbar-brand(href='#') Navbar
             ul.c-nav.c-nav-pills(role='tablist')
               li.c-nav-item
-                a.c-nav-link.active(href='#fat') @fat
+                a.c-nav-link.c-active(href='#fat') @fat
               li.c-nav-item
                 a.c-nav-link(href='#mdo') @mdo
               li.c-nav-item.c-dropdown
@@ -50,7 +50,7 @@ block view
         .c-row.bd-example2
           .c-col-4
             #list-example.c-list-group
-              a.c-list-group-item.c-list-group-item-action.active(href='#list-item-1') Item 1
+              a.c-list-group-item.c-list-group-item-action.c-active(href='#list-item-1') Item 1
               a.c-list-group-item.c-list-group-item-action(href='#list-item-2') Item2
               a.c-list-group-item.c-list-group-item-action(href='#list-item-3') Item 3
               a.c-list-group-item.c-list-group-item-action(href='#list-item-4') Item 4

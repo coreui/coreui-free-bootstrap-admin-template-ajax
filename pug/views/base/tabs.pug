@@ -1,28 +1,81 @@
-extends /default.pug
+extends /_layout/default.pug
 
 block view
   .c-fade-in
     .c-row
       .c-col-md-6.c-mb-4
-        ul.c-nav.c-nav-tabs(role='tablist')
-          li.c-nav-item
-            a.c-nav-link.active(data-toggle='c-tab', href='#home', role='tab', aria-controls='home') Home
-          li.c-nav-item
-            a.c-nav-link(data-toggle='c-tab', href='#profile', role='tab', aria-controls='profile') Profile
-          li.c-nav-item
-            a.c-nav-link(data-toggle='c-tab', href='#messages', role='tab', aria-controls='messages') Messages
-        .c-tab-content
-          #home.c-tab-pane.active(role='tabpanel')
-            | 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          #profile.c-tab-pane(role='tabpanel')
-            | 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          #messages.c-tab-pane(role='tabpanel')
-            | 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        .c-nav-tabs-boxed
+          ul.c-nav.c-nav-tabs(role='tablist')
+            li.c-nav-item
+              a.c-nav-link.c-active(data-toggle='c-tab', href='#home', role='tab', aria-controls='home') Home
+            li.c-nav-item
+              a.c-nav-link(data-toggle='c-tab', href='#profile', role='tab', aria-controls='profile') Profile
+            li.c-nav-item
+              a.c-nav-link(data-toggle='c-tab', href='#messages', role='tab', aria-controls='messages') Messages
+          .c-tab-content
+            #home.c-tab-pane.c-active(role='tabpanel')
+              | 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            #profile.c-tab-pane(role='tabpanel')
+              | 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            #messages.c-tab-pane(role='tabpanel')
+              | 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      // /.c-col
+      .c-col-md-6.c-mb-4
+        .c-nav-tabs-boxed.c-nav-tabs-boxed-top-right
+          ul.c-nav.c-nav-tabs(role='tablist')
+            li.c-nav-item
+              a.c-nav-link.c-active(data-toggle='c-tab', href='#home', role='tab', aria-controls='home') Home
+            li.c-nav-item
+              a.c-nav-link(data-toggle='c-tab', href='#profile', role='tab', aria-controls='profile') Profile
+            li.c-nav-item
+              a.c-nav-link(data-toggle='c-tab', href='#messages', role='tab', aria-controls='messages') Messages
+          .c-tab-content
+            #home.c-tab-pane.c-active(role='tabpanel')
+              | 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            #profile.c-tab-pane(role='tabpanel')
+              | 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            #messages.c-tab-pane(role='tabpanel')
+              | 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      // /.c-col
+    .c-row
+      .c-col-md-6.c-mb-4
+        .c-nav-tabs-boxed.c-nav-tabs-boxed-left
+          ul.c-nav.c-nav-tabs(role='tablist')
+            li.c-nav-item
+              a.c-nav-link.c-active(data-toggle='c-tab', href='#home', role='tab', aria-controls='home') Home
+            li.c-nav-item
+              a.c-nav-link(data-toggle='c-tab', href='#profile', role='tab', aria-controls='profile') Profile
+            li.c-nav-item
+              a.c-nav-link(data-toggle='c-tab', href='#messages', role='tab', aria-controls='messages') Messages
+          .c-tab-content
+            #home.c-tab-pane.c-active(role='tabpanel')
+              | 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            #profile.c-tab-pane(role='tabpanel')
+              | 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            #messages.c-tab-pane(role='tabpanel')
+              | 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      // /.c-col
+      .c-col-md-6.c-mb-4
+        .c-nav-tabs-boxed.c-nav-tabs-boxed-right
+          ul.c-nav.c-nav-tabs(role='tablist')
+            li.c-nav-item
+              a.c-nav-link.c-active(data-toggle='c-tab', href='#home', role='tab', aria-controls='home') Home
+            li.c-nav-item
+              a.c-nav-link(data-toggle='c-tab', href='#profile', role='tab', aria-controls='profile') Profile
+            li.c-nav-item
+              a.c-nav-link(data-toggle='c-tab', href='#messages', role='tab', aria-controls='messages') Messages
+          .c-tab-content
+            #home.c-tab-pane.c-active(role='tabpanel')
+              | 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            #profile.c-tab-pane(role='tabpanel')
+              | 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            #messages.c-tab-pane(role='tabpanel')
+              | 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       // /.c-col
       .c-col-md-6.c-mb-4
         ul.c-nav.c-nav-tabs(role='tablist')
           li.c-nav-item
-            a.c-nav-link.active(data-toggle='c-tab', href='#home2', role='tab', aria-controls='home')
+            a.c-nav-link.c-active(data-toggle='c-tab', href='#home2', role='tab', aria-controls='home')
               i.icon-calculator
           li.c-nav-item
             a.c-nav-link(data-toggle='c-tab', href='#profile2', role='tab', aria-controls='profile')
@@ -31,7 +84,7 @@ block view
             a.c-nav-link(data-toggle='c-tab', href='#messages2', role='tab', aria-controls='messages')
               i.icon-pie-chart
         .c-tab-content
-          #home2.c-tab-pane.active(role='tabpanel')
+          #home2.c-tab-pane.c-active(role='tabpanel')
             | 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           #profile2.c-tab-pane(role='tabpanel')
             | 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -41,7 +94,7 @@ block view
       .c-col-md-6.c-mb-4
         ul.c-nav.c-nav-tabs(role='tablist')
           li.c-nav-item
-            a.c-nav-link.active(data-toggle='c-tab', href='#home3', role='tab', aria-controls='home')
+            a.c-nav-link.c-active(data-toggle='c-tab', href='#home3', role='tab', aria-controls='home')
               i.icon-calculator
               |  Calculator
           li.c-nav-item
@@ -53,7 +106,7 @@ block view
               i.icon-pie-chart
               |  Charts
         .c-tab-content
-          #home3.c-tab-pane.active(role='tabpanel')
+          #home3.c-tab-pane.c-active(role='tabpanel')
             | 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           #profile3.c-tab-pane(role='tabpanel')
             | 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -63,7 +116,7 @@ block view
       .c-col-md-6.c-mb-4
         ul.c-nav.c-nav-tabs(role='tablist')
           li.c-nav-item
-            a.c-nav-link.active(data-toggle='c-tab', href='#home4', role='tab', aria-controls='home')
+            a.c-nav-link.c-active(data-toggle='c-tab', href='#home4', role='tab', aria-controls='home')
               i.icon-calculator
               |  Calculator
               span.c-badge.c-badge-success New
@@ -77,7 +130,7 @@ block view
               i.icon-pie-chart
               |  Charts
         .c-tab-content
-          #home4.c-tab-pane.active(role='tabpanel')
+          #home4.c-tab-pane.c-active(role='tabpanel')
             | 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           #profile4.c-tab-pane(role='tabpanel')
             | 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

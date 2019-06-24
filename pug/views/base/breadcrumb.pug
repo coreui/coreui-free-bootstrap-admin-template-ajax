@@ -1,4 +1,4 @@
-extends /default.pug
+extends /_layout/default.pug
 
 block view
   .c-fade-in
@@ -14,22 +14,22 @@ block view
           .c-card-body
             nav(aria-label='breadcrumb', role='navigation')
               ol.c-breadcrumb
-                li.c-breadcrumb-item.active(aria-current='page') Home
+                li.c-breadcrumb-item.c-active(aria-current='page') Home
             nav(aria-label='breadcrumb', role='navigation')
               ol.c-breadcrumb
                 li.c-breadcrumb-item
                   a(href='#') Home
-                li.c-breadcrumb-item.active(aria-current='page') Library
+                li.c-breadcrumb-item.c-active(aria-current='page') Library
             nav(aria-label='breadcrumb', role='navigation')
               ol.c-breadcrumb
                 li.c-breadcrumb-item
                   a(href='#') Home
                 li.c-breadcrumb-item
                   a(href='#') Library
-                li.c-breadcrumb-item.active(aria-current='page') Data
+                li.c-breadcrumb-item.c-active(aria-current='page') Data
             nav.c-breadcrumb
               a.c-breadcrumb-item(href='#') Home
               a.c-breadcrumb-item(href='#') Library
               a.c-breadcrumb-item(href='#') Data
-              span.c-breadcrumb-item.active Bootstrap
+              span.c-breadcrumb-item.c-active Bootstrap
     // /.c-row

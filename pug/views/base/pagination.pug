@@ -1,4 +1,4 @@
-extends /default.pug
+extends /_layout/default.pug
 
 block view
   .c-fade-in
@@ -52,11 +52,11 @@ block view
       .c-card-body
         nav(aria-label='...')
           ul.c-pagination
-            li.c-page-item.disabled
+            li.c-page-item.c-disabled
               a.c-page-link(href='#', tabindex='-1') Previous
             li.c-page-item
               a.c-page-link(href='#') 1
-            li.c-page-item.active
+            li.c-page-item.c-active
               a.c-page-link(href='#')
                 | 2
                 span.sr-only (current)
@@ -67,11 +67,11 @@ block view
         hr
         nav(aria-label='...')
           ul.c-pagination
-            li.c-page-item.disabled
+            li.c-page-item.c-disabled
               span.c-page-link Previous
             li.c-page-item
               a.c-page-link(href='#') 1
-            li.c-page-item.active
+            li.c-page-item.c-active
               span.c-page-link
                 | 2
                 span.sr-only (current)
@@ -87,7 +87,7 @@ block view
       .c-card-body
         nav(aria-label='...')
           ul.c-pagination.c-pagination-lg
-            li.c-page-item.disabled
+            li.c-page-item.c-disabled
               a.c-page-link(href='#', tabindex='-1') Previous
             li.c-page-item
               a.c-page-link(href='#') 1
@@ -100,7 +100,7 @@ block view
         hr
         nav(aria-label='...')
           ul.c-pagination.c-pagination-sm
-            li.c-page-item.disabled
+            li.c-page-item.c-disabled
               a.c-page-link(href='#', tabindex='-1') Previous
             li.c-page-item
               a.c-page-link(href='#') 1
@@ -118,7 +118,7 @@ block view
       .c-card-body
         nav(aria-label='Page navigation example')
           ul.c-pagination.c-justify-content-start
-            li.c-page-item.disabled
+            li.c-page-item.c-disabled
               a.c-page-link(href='#', tabindex='-1') Previous
             li.c-page-item
               a.c-page-link(href='#') 1
@@ -131,7 +131,7 @@ block view
         hr
         nav(aria-label='Page navigation example')
           ul.c-pagination.c-justify-content-center
-            li.c-page-item.disabled
+            li.c-page-item.c-disabled
               a.c-page-link(href='#', tabindex='-1') Previous
             li.c-page-item
               a.c-page-link(href='#') 1
@@ -144,7 +144,7 @@ block view
         hr
         nav(aria-label='Page navigation example')
           ul.c-pagination.c-justify-content-end
-            li.c-page-item.disabled
+            li.c-page-item.c-disabled
               a.c-page-link(href='#', tabindex='-1') Previous
             li.c-page-item
               a.c-page-link(href='#') 1

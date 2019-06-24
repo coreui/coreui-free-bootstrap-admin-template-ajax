@@ -1,4 +1,4 @@
-extends /pages.pug
+extends /_layout/pages.pug
 
 block view
   .c-container
@@ -12,12 +12,12 @@ block view
               .c-input-group.c-mb-3
                 .c-input-group-prepend
                   span.c-input-group-text
-                    i.icon-user
+                    img.c-icon(src="assets/icons/user.svg" width="16" height="16" alt="CoreUI Icons User")
                 input.c-form-control(type='text', placeholder='Username')
               .c-input-group.c-mb-4
                 .c-input-group-prepend
                   span.c-input-group-text
-                    i.icon-lock
+                    img.c-icon(src="assets/icons/lock-locked.svg" width="16" height="16" alt="CoreUI Icons Lock Locked")
                 input.c-form-control(type='password', placeholder='Password')
               .c-row
                 .c-col-6
@@ -30,4 +30,4 @@ block view
                 h2 Sign up
                 p
                   | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                button.c-btn.c-btn-primary.active.c-mt-3(type='button') Register Now!
+                button.c-btn.c-btn-primary.c-active.c-mt-3(type='button') Register Now!
