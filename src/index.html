@@ -39,13 +39,9 @@
   </head>
   <body class="c-app c-default-layout">
     <header class="c-header c-header-light c-header-fixed">
-      <button class="c-header-toggler c-class-toggler c-d-lg-none c-mr-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show"><span class="c-header-toggler-icon"></span></button><a class="c-header-brand" href="#"><img class="c-header-brand-full" src="assets/brand/coreui-base.svg" width="97" height="46" alt="CoreUI Logo"><img class="c-header-brand-minimized" src="assets/brand/coreui-signet.svg" width="46" height="46" alt="CoreUI Logo"></a>
+      <button class="c-header-toggler c-class-toggler c-d-lg-none c-mr-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show"><span class="c-header-toggler-icon"></span></button><a class="c-header-brand c-header-brand-md-down-centered" href="#"><img class="c-header-brand-full" src="assets/brand/coreui-base.svg" width="97" height="46" alt="CoreUI Logo"><img class="c-header-brand-minimized" src="assets/brand/coreui-signet.svg" width="46" height="46" alt="CoreUI Logo"></a>
       <button class="c-header-toggler c-class-toggler c-d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true"><span class="c-header-toggler-icon"></span></button>
-      <button class="c-header-toggler c-class-toggler c-d-lg-none" type="button" data-target="#sidebar" data-class="c-sidebar-show"><span class="c-header-toggler-icon"></span></button>
       <ul class="c-nav c-header-nav c-d-md-down-none">
-        <li class="c-nav-item c-px-3">
-          <button class="c-class-toggler c-btn" type="button" data-target="body" data-class="c-dark-theme"><i class="cui-sun"></i></button>
-        </li>
         <li class="c-nav-item c-px-3"><a class="c-nav-link" href="#">Dashboard</a></li>
         <li class="c-nav-item c-px-3"><a class="c-nav-link" href="#">Users</a></li>
         <li class="c-nav-item c-px-3"><a class="c-nav-link" href="#">Settings</a></li>
@@ -62,8 +58,6 @@
           </div>
         </li>
       </ul>
-      <button class="c-header-toggler c-class-toggler c-d-md-down-none" type="button" data-target="#aside" data-class="c-sidebar-lg-show" responsive="true"><span class="c-header-toggler-icon"></span></button>
-      <button class="c-header-toggler c-class-toggler c-d-lg-none" type="button" data-target="#aside" data-class="c-sidebar-show"><span class="c-header-toggler-icon"></span></button>
     </header>
     <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
       <nav class="c-sidebar-nav">
@@ -132,147 +126,6 @@
         </ul>
       </nav>
       <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="['_parent','.c-header-brand']" data-class="['c-sidebar-minimized','c-header-brand-minimized']"></button>
-    </div>
-    <div class="c-sidebar c-sidebar-light c-sidebar-right c-sidebar-fixed" id="aside">
-      <ul class="c-nav c-nav-tabs" role="tablist">
-        <li class="c-nav-item"><a class="c-nav-link c-active" data-toggle="c-tab" href="#timeline" role="tab"><img class="c-icon" src="assets/icons/list.svg" width="16" height="16" alt="CoreUI Icons List"></a></li>
-        <li class="c-nav-item"><a class="c-nav-link" data-toggle="c-tab" href="#messages" role="tab"><img class="c-icon" src="assets/icons/speech.svg" width="16" height="16" alt="CoreUI Icons Speech"></a></li>
-        <li class="c-nav-item"><a class="c-nav-link" data-toggle="c-tab" href="#settings" role="tab"><img class="c-icon" src="assets/icons/settings.svg" width="16" height="16" alt="CoreUI Icons Settings"></a></li>
-      </ul>
-      <!-- Tab panes-->
-      <div class="c-tab-content">
-        <div class="c-tab-pane c-active" id="timeline" role="tabpanel">
-          <div class="c-list-group c-list-group-accent">
-            <div class="c-list-group-item c-list-group-item-accent-secondary c-bg-light c-text-center c-font-weight-bold c-text-muted c-text-uppercase c-small">Today</div>
-            <div class="c-list-group-item c-list-group-item-accent-warning c-list-group-item-divider">
-              <div class="c-avatar c-float-right"><img class="c-img-avatar" src="assets/img/avatars/7.jpg" alt="admin@bootstrapmaster.com"></div>
-              <div>Meeting with<strong>Lucas</strong></div><small class="c-text-muted c-mr-3"><i class="icon-calendar"></i>  1 - 3pm</small><small class="c-text-muted"><i class="icon-location-pin"></i>  Palo Alto, CA</small>
-            </div>
-            <div class="c-list-group-item c-list-group-item-accent-info">
-              <div class="c-avatar c-float-right"><img class="c-img-avatar" src="assets/img/avatars/4.jpg" alt="admin@bootstrapmaster.com"></div>
-              <div>Skype with<strong>Megan</strong></div><small class="c-text-muted c-mr-3"><i class="icon-calendar"></i>  4 - 5pm</small><small class="c-text-muted"><i class="icon-social-skype"></i>  On-line</small>
-            </div>
-            <div class="c-list-group-item c-list-group-item-accent-secondary c-bg-light c-text-center c-font-weight-bold c-text-muted c-text-uppercase c-small">Tomorrow</div>
-            <div class="c-list-group-item c-list-group-item-accent-danger c-list-group-item-divider">
-              <div>New UI Project -<strong>deadline</strong></div><small class="c-text-muted c-mr-3"><i class="icon-calendar"></i>  10 - 11pm</small><small class="c-text-muted"><i class="icon-home"></i>  creativeLabs HQ</small>
-              <div class="c-avatars-stack c-mt-2">
-                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="assets/img/avatars/2.jpg" alt="admin@bootstrapmaster.com"></div>
-                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="assets/img/avatars/3.jpg" alt="admin@bootstrapmaster.com"></div>
-                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="assets/img/avatars/4.jpg" alt="admin@bootstrapmaster.com"></div>
-                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="assets/img/avatars/5.jpg" alt="admin@bootstrapmaster.com"></div>
-                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></div>
-              </div>
-            </div>
-            <div class="c-list-group-item c-list-group-item-accent-success c-list-group-item-divider">
-              <div><strong>#10 Startups.Garden</strong> Meetup</div><small class="c-text-muted c-mr-3"><i class="icon-calendar"></i>  1 - 3pm</small><small class="c-text-muted"><i class="icon-location-pin"></i>  Palo Alto, CA</small>
-            </div>
-            <div class="c-list-group-item c-list-group-item-accent-primary c-list-group-item-divider">
-              <div><strong>Team meeting</strong></div><small class="c-text-muted c-mr-3"><i class="icon-calendar"></i>  4 - 6pm</small><small class="c-text-muted"><i class="icon-home"></i>  creativeLabs HQ</small>
-              <div class="c-avatars-stack c-mt-2">
-                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="assets/img/avatars/2.jpg" alt="admin@bootstrapmaster.com"></div>
-                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="assets/img/avatars/3.jpg" alt="admin@bootstrapmaster.com"></div>
-                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="assets/img/avatars/4.jpg" alt="admin@bootstrapmaster.com"></div>
-                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="assets/img/avatars/5.jpg" alt="admin@bootstrapmaster.com"></div>
-                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="assets/img/avatars/6.jpg" alt="admin@bootstrapmaster.com"></div>
-                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="assets/img/avatars/7.jpg" alt="admin@bootstrapmaster.com"></div>
-                <div class="c-avatar c-avatar-xs"><img class="c-img-avatar" src="assets/img/avatars/8.jpg" alt="admin@bootstrapmaster.com"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="c-tab-pane c-p-3" id="messages" role="tabpanel">
-          <div class="message">
-            <div class="c-py-3 c-pb-5 c-mr-3 c-float-left">
-              <div class="c-avatar"><img class="c-img-avatar" src="assets/img/avatars/7.jpg" alt="admin@bootstrapmaster.com"><span class="c-avatar-status c-badge-success"></span></div>
-            </div>
-            <div><small class="c-text-muted">Lukasz Holeczek</small><small class="c-text-muted c-float-right c-mt-1">1:52 PM</small></div>
-            <div class="c-text-truncate c-font-weight-bold">Lorem ipsum dolor sit amet</div><small class="c-text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
-          </div>
-          <hr>
-          <div class="message">
-            <div class="c-py-3 c-pb-5 c-mr-3 c-float-left">
-              <div class="c-avatar"><img class="c-img-avatar" src="assets/img/avatars/7.jpg" alt="admin@bootstrapmaster.com"><span class="c-avatar-status c-badge-success"></span></div>
-            </div>
-            <div><small class="c-text-muted">Lukasz Holeczek</small><small class="c-text-muted c-float-right c-mt-1">1:52 PM</small></div>
-            <div class="c-text-truncate c-font-weight-bold">Lorem ipsum dolor sit amet</div><small class="c-text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
-          </div>
-          <hr>
-          <div class="message">
-            <div class="c-py-3 c-pb-5 c-mr-3 c-float-left">
-              <div class="c-avatar"><img class="c-img-avatar" src="assets/img/avatars/7.jpg" alt="admin@bootstrapmaster.com"><span class="c-avatar-status c-badge-success"></span></div>
-            </div>
-            <div><small class="c-text-muted">Lukasz Holeczek</small><small class="c-text-muted c-float-right c-mt-1">1:52 PM</small></div>
-            <div class="c-text-truncate c-font-weight-bold">Lorem ipsum dolor sit amet</div><small class="c-text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
-          </div>
-          <hr>
-          <div class="message">
-            <div class="c-py-3 c-pb-5 c-mr-3 c-float-left">
-              <div class="c-avatar"><img class="c-img-avatar" src="assets/img/avatars/7.jpg" alt="admin@bootstrapmaster.com"><span class="c-avatar-status c-badge-success"></span></div>
-            </div>
-            <div><small class="c-text-muted">Lukasz Holeczek</small><small class="c-text-muted c-float-right c-mt-1">1:52 PM</small></div>
-            <div class="c-text-truncate c-font-weight-bold">Lorem ipsum dolor sit amet</div><small class="c-text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
-          </div>
-          <hr>
-          <div class="message">
-            <div class="c-py-3 c-pb-5 c-mr-3 c-float-left">
-              <div class="c-avatar"><img class="c-img-avatar" src="assets/img/avatars/7.jpg" alt="admin@bootstrapmaster.com"><span class="c-avatar-status c-badge-success"></span></div>
-            </div>
-            <div><small class="c-text-muted">Lukasz Holeczek</small><small class="c-text-muted c-float-right c-mt-1">1:52 PM</small></div>
-            <div class="c-text-truncate c-font-weight-bold">Lorem ipsum dolor sit amet</div><small class="c-text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
-          </div>
-        </div>
-        <div class="c-tab-pane c-p-3" id="settings" role="tabpanel">
-          <h6>Settings</h6>
-          <div class="c-aside-options">
-            <div class="c-clearfix c-mt-4"><small><b>Option 1</b></small>
-              <label class="c-switch c-switch-label c-switch-pill c-switch-success c-switch-sm c-float-right">
-                <input class="c-switch-input" type="checkbox" checked=""><span class="c-switch-slider" data-checked="On" data-unchecked="Off"></span>
-              </label>
-            </div>
-            <div><small class="c-text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></div>
-          </div>
-          <div class="c-aside-options">
-            <div class="c-clearfix c-mt-3"><small><b>Option 2</b></small>
-              <label class="c-switch c-switch-label c-switch-pill c-switch-success c-switch-sm c-float-right">
-                <input class="c-switch-input" type="checkbox"><span class="c-switch-slider" data-checked="On" data-unchecked="Off"></span>
-              </label>
-            </div>
-            <div><small class="c-text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></div>
-          </div>
-          <div class="c-aside-options">
-            <div class="c-clearfix c-mt-3"><small><b>Option 3</b></small>
-              <label class="c-switch c-switch-label c-switch-pill c-switch-success c-switch-sm c-float-right">
-                <input class="c-switch-input" type="checkbox"><span class="c-switch-slider" data-checked="On" data-unchecked="Off"></span>
-              </label>
-            </div>
-          </div>
-          <div class="c-aside-options">
-            <div class="c-clearfix c-mt-3"><small><b>Option 4</b></small>
-              <label class="c-switch c-switch-label c-switch-pill c-switch-success c-switch-sm c-float-right">
-                <input class="c-switch-input" type="checkbox" checked=""><span class="c-switch-slider" data-checked="On" data-unchecked="Off"></span>
-              </label>
-            </div>
-          </div>
-          <hr>
-          <h6>System Utilization</h6>
-          <div class="c-text-uppercase c-mb-1 c-mt-4"><small><b>CPU Usage</b></small></div>
-          <div class="c-progress c-progress-xs">
-            <div class="c-progress-bar c-bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-          </div><small class="c-text-muted">348 Processes. 1/4 Cores.</small>
-          <div class="c-text-uppercase c-mb-1 c-mt-2"><small><b>Memory Usage</b></small></div>
-          <div class="c-progress c-progress-xs">
-            <div class="c-progress-bar c-bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-          </div><small class="c-text-muted">11444GB/16384MB</small>
-          <div class="c-text-uppercase c-mb-1 c-mt-2"><small><b>SSD 1 Usage</b></small></div>
-          <div class="c-progress c-progress-xs">
-            <div class="c-progress-bar c-bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-          </div><small class="c-text-muted">243GB/256GB</small>
-          <div class="c-text-uppercase c-mb-1 c-mt-2"><small><b>SSD 2 Usage</b></small></div>
-          <div class="c-progress c-progress-xs">
-            <div class="c-progress-bar c-bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-          </div><small class="c-text-muted">25GB/256GB</small>
-        </div>
-      </div>
     </div>
     <div class="c-body">
       <main class="c-main">
