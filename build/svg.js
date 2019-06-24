@@ -1,32 +1,37 @@
 #!/usr/bin/env node
-
 'use strict'
 
-const http = require('http');
-const fs = require('fs');
+const glob = require('glob')
+const path = require('path')
+const inject = require('@coreui/svg-injector')
+const { resolve } = path
+const svgSelectors = 'img.c-icon, img.c-btn-icon, img.c-nav-icon'
 
-const lines = fs.readFileSync('dist/index.html', 'ascii').toString().split('\n')
-
-// go through the list of code lines
-lines.forEach((line) => {
-  // console.log(line)
-  const svg = line.match(/(?:data|src)=\"([^"]*svg)\"/).match(/\"nav-ivon\"/)
-  const navIcon = line.match(/\"nav-ivon\"/)
-  if (svg && navIcon) {
-    const src = svg[1]
-    console.log(src)
+// Get all html files
+const views = () => {
+  const cwd = 'dist/'
+  const pattern = '**/*.html'
+  const options = {
+    cwd
   }
-})
+  const filenames = new glob.sync(pattern, options)
+  return filenames.map(filename => {
+    const obj = {}
+    obj.dir = filename.split('/')[0]
+    obj.path = resolve(cwd, filename)
+    return obj
+  })
+}
 
-// <img([\w\W]+?)>
+const injectSVG = views => {
+  views.forEach(view => {
+    const file = resolve(__dirname, view.path)
+    inject.toFile(file, svgSelectors, 'src/')
+  })
+}
 
-// fs.readFile('dist/index.html', 'utf8', function (err,data) {
-//   if (err) {
-//     return console.log(err);
-//   }
-//   // var result = data.replace(/string to be replaced/g, 'replacement');
-//
-//   // fs.writeFile(someFile, result, 'utf8', function (err) {
-//   //    if (err) return console.log(err);
-//   // });
-// });
+const main = () => {
+  injectSVG(views())
+}
+
+main()
