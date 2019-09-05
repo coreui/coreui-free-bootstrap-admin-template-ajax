@@ -78,7 +78,7 @@
   "dependencies": {
     "@coreui/coreui": "next",
     "@coreui/coreui-chartjs": "2.0.0-alpha.0",
-    "@coreui/icons": "0.3.0",
+    "@coreui/icons": "0.4.1",
     "@iconfu/svg-inject": "^1.2.3",
     "@tanem/svg-injector": "^3.0.0",
     "chart.js": "^2.8.0",
