@@ -5,13 +5,13 @@ include ./_partials/banner.pug
 html(lang='en')
   head
     include ./_partials/head.pug
-  body.c-app.c-default-layout
-    include ./_partials/header.pug
+  body.c-app
     include ./_partials/sidebar.pug
-    .c-body
-      main(class='c-main')
-        include ./_partials/breadcrumb.pug
-        .container-fluid
-          #ui-view
-    include ./_partials/footer.pug
+    .c-wrapper
+      include ./_partials/header.pug
+      .c-body
+        main(class='c-main')
+          .container-fluid
+            #ui-view
+      include ./_partials/footer.pug
     include ./_partials/scripts.pug
